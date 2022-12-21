@@ -14,6 +14,9 @@ The OpenCore team (https://github.com/acidanthera/OpenCorePkg).
 
 If you like this project, consider contributing [here](https://github.com/sickcodes/Docker-OSX)!
 
+This guide is a combination of information gathered from the BlueBubbles [Wiki](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#extract-image) and Docker-OSX [README.md](https://github.com/sickcodes/Docker-OSX#readme). Full credits go to them 😊
+
+
 # Quick Start Docker-OSX
 
 This guide uses Ubuntu 22.04 LTS ([download](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64))
@@ -99,7 +102,7 @@ bash Docker-OSX/4_firstrun.sh
 19. Setup AirMessage/BlueBubbles!
 
 
-## Subsequent Runs [source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#subsequent-run)
+## Subsequent Runs ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#subsequent-run))
 20. From now on you only need to run the fifth bash script to turn on the Docker container
 
 ```
