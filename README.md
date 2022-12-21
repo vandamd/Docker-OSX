@@ -29,7 +29,7 @@ This guide uses a fresh install of Ubuntu Desktop 22.04 LTS ([download](https://
 sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager libguestfs-tools make gcc git screen
 ```
 
-3. Clone this repo for a copy of the bash scripts
+3. Clone this repo for a copy of the bash scripts (or you can just copy and paste them into your terminal)
 
 ```
 git clone https://github.com/vandamd/Docker-OSX.git
