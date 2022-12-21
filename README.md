@@ -35,7 +35,7 @@ sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-util
 git clone https://github.com/vandamd/Docker-OSX.git
 ```
 
-4. Install Docker
+4. Install Docker ([source](https://docs.docker.com/engine/install/ubuntu/))
 
 ```
 sudo apt-get update
