@@ -35,37 +35,70 @@ sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-util
 git clone https://github.com/vandamd/Docker-OSX.git
 ```
 
-4. (On a different machine,) download a VNC Viewer such as [TigerVNC](https://tigervnc.org/) or [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/macos/). This is used for remotely accessing macOS inside the Docker container
+4. Install Docker. Copy and paste 
+
+```
+sudo apt-get update
+
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+
+5. (On a different machine,) download a VNC Viewer such as [TigerVNC](https://tigervnc.org/) or [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/macos/). This is used for remotely accessing macOS inside the Docker container
+
+
+
+
+
+
+
+
+
 
 
 ## Initiating the base image ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#initiate-base-image))
-5. Run the first bash script to initiate the base image:
+6. Run the first bash script to initiate the base image:
 
 ```
 bash Docker-OSX/1_baseimage.sh
 ```
 
-6. Connect to macOS via VNC, your VNC Server address may look like `192.168.1.77:5999`. Your IP Address is probably something else, can find it using `hostname -I`
+7. Connect to macOS via VNC, your VNC Server address may look like `192.168.1.77:5999`. Your IP Address is probably something else, can find it using `hostname -I`
 
 
 ## Install macOS ([source](https://github.com/sickcodes/Docker-OSX#additional-boot-instructions-for-when-you-are-creating-your-container))
-7. Boot into macOS Base System (Press Enter)
+8. Boot into macOS Base System (Press Enter)
 
-8. Click `Disk Utility`
+9. Click `Disk Utility`
 
-9. Erase the BIGGEST disk (around 200gb default), DO NOT MODIFY THE SMALLER DISKS. If you can't click `erase`, you may need to reduce the disk size by 1kb
+10. Erase the BIGGEST disk (around 200gb default), DO NOT MODIFY THE SMALLER DISKS. If you can't click `erase`, you may need to reduce the disk size by 1kb
 
-10. Click `Reinstall macOS`. The system may require multiple reboots during installation
+11. Click `Reinstall macOS`. The system may require multiple reboots during installation
 
-11. Setup macOS as normal. You can sign into iCloud during setup or do it later, it doesn't matter
+12. Setup macOS as normal. You can sign into iCloud during setup or do it later, it doesn't matter
 
-12. Once finished, DO NOT OPEN iMessage
+13. Once finished, DO NOT OPEN iMessage
 
-13. Shutdown macOS as normal
+14. Shutdown macOS as normal
 
 
 ## Extract image ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#extract-image))
-14. Run the second bash script:
+15. Run the second bash script:
 
 ```
 bash Docker-OSX/2_extractimage.sh
@@ -77,7 +110,7 @@ NOTE: This may take a while!
 
 
 ## Generate Unique Serial ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#generate-unique-serial))
-15. Run the third bash script:
+16. Run the third bash script:
 
 ```
 bash Docker-OSX/3_genserial.sh
@@ -89,21 +122,21 @@ You can verify if your serial number is suitable by entering into Apple's [Check
 
 
 ## First Run ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#first-run))
-16. Run the fourth bash script:
+17. Run the fourth bash script:
 
 ```
 bash Docker-OSX/4_firstrun.sh
 ```
 
-17. Connect via VNC using the same address as before
+18. Connect via VNC using the same address as before
 
-18. Login to macOS as usual, open iMessage and setup iCloud Sync
+19. Login to macOS as usual, open iMessage and setup iCloud Sync
 
-19. Setup AirMessage/BlueBubbles!
+20. Setup AirMessage/BlueBubbles!
 
 
 ## Subsequent Runs ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#subsequent-run))
-20. From now on you only need to run the fifth bash script to turn on the Docker container
+21. From now on you only need to run the fifth bash script to turn on the Docker container
 
 ```
 bash Docker-OSX/5_subrun.sh
