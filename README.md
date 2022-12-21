@@ -35,7 +35,7 @@ sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-util
 git clone https://github.com/vandamd/Docker-OSX.git
 ```
 
-4. Install Docker. Copy and paste 
+4. Install Docker
 
 ```
 sudo apt-get update
@@ -60,15 +60,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 5. (On a different machine,) download a VNC Viewer such as [TigerVNC](https://tigervnc.org/) or [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/macos/). This is used for remotely accessing macOS inside the Docker container
-
-
-
-
-
-
-
-
-
 
 
 ## Initiating the base image ([source](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#initiate-base-image))
