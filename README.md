@@ -59,6 +59,20 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
+5. Enable Docker usage as a non-root user ([source](https://docs.docker.com/engine/install/linux-postinstall/))
+
+```
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+```
+
+Log out and log back in
+
+```
+newgrp docker
+```
+
 5. (On a different machine,) download a VNC Viewer such as [TigerVNC](https://tigervnc.org/) or [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/macos/). This is used for remotely accessing macOS inside the Docker container
 
 
