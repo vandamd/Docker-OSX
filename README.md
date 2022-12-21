@@ -19,7 +19,7 @@ This guide is a combination of information gathered and modified from the BlueBu
 
 # Quick Start Docker-OSX
 
-This guide uses Ubuntu 22.04 LTS ([download](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64))
+This guide uses a fresh install of Ubuntu Desktop 22.04 LTS ([download](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64))
 
 ## Prerequisite Setup ([source](https://github.com/sickcodes/Docker-OSX#initial-setup))
 1. Turn on hardware virtualisation in your BIOS
@@ -147,6 +147,13 @@ bash Docker-OSX/4_firstrun.sh
 bash Docker-OSX/5_subrun.sh
 ```
 
+## Notes
+
 If you want macOS to turn on when you boot up Ubuntu, you can change the restart policy. You can find out [here](https://docs.docker.com/config/containers/start-containers-automatically/). I used [Portainer](https://www.portainer.io/) to do it as I also manage other containers!
 
 If it's a bit slow you can look at [this](https://github.com/sickcodes/osx-optimizer) to optimise macOS.
+
+For those of you who are running on a Dell XPS like I am, consider limiting your battery charge with Dell's Command | Configure, and disabling suspension when closing the lid. 
+- You can find Dell's Command | Configure [here](https://www.dell.com/support/home/en-uk/?lwp=rt), search for your laptop model
+- `sudo ./cctk --PrimaryBattChargeCfg=Custom:50-80`
+- To disable suspension when lid is closed, install Gnome Tweak Tool, open it and disable suspension 
