@@ -14,7 +14,7 @@ The OpenCore team (https://github.com/acidanthera/OpenCorePkg).
 
 If you like this project, consider contributing [here](https://github.com/sickcodes/Docker-OSX)!
 
-This guide is a combination of information gathered from the BlueBubbles [Wiki](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#extract-image) and Docker-OSX [README.md](https://github.com/sickcodes/Docker-OSX#readme). Full credits go to them 😊
+This guide is a combination of information gathered and modified from the BlueBubbles [Wiki](https://docs.bluebubbles.app/server/advanced/macos-virtualization/running-macos-via-docker#extract-image) and Docker-OSX [README.md](https://github.com/sickcodes/Docker-OSX#readme). Full credits go to them 😊
 
 
 # Quick Start Docker-OSX
