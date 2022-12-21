@@ -26,10 +26,10 @@ This guide uses Ubuntu 22.04 LTS ([download](https://ubuntu.com/download/desktop
 2. Install QEMU and other dependancies with:
 
 ```
-sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager libguestfs-tools make gcc
+sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager libguestfs-tools make gcc git
 ```
 
-3. Clone this repo for a copy of the bash scripts
+3. Clone this repo, or download as zip for a copy of the bash scripts
 
 ```
 git clone https://github.com/vandamd/Docker-OSX.git
