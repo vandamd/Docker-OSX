@@ -149,7 +149,7 @@ bash Docker-OSX/5_subrun.sh
 
 ## Notes
 
-If you want macOS to turn on when you boot up Ubuntu, you can change the restart policy. You can find out [here](https://docs.docker.com/config/containers/start-containers-automatically/). I used [Portainer](https://www.portainer.io/) to do it as I also manage other containers!
+If you want macOS to turn on when you boot up Ubuntu, you can change the restart policy. You can find out [here](https://docs.docker.com/config/containers/start-containers-automatically/). I used [Portainer](https://www.portainer.io/) to do it as I prefer managing other containers with it!
 
 If it's a bit slow you can look at [this](https://github.com/sickcodes/osx-optimizer) to optimise macOS.
 
