@@ -1,6 +1,6 @@
 # macOS in Docker for AirMessage/BlueBubbles
 
-This is a quick guide to get macOS running in Docker inside Ubuntu Desktop!
+This is a quick guide to get macOS running in Docker on Ubuntu Desktop!
 
 # Credits
 
