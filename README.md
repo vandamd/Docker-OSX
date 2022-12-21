@@ -26,7 +26,7 @@ This guide uses Ubuntu 22.04 LTS ([download](https://ubuntu.com/download/desktop
 2. Install QEMU and other dependancies with:
 
 ```
-sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager libguestfs-tools make gcc git
+sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager libguestfs-tools make gcc git screen
 ```
 
 3. Clone this repo for a copy of the bash scripts
