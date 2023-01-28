@@ -19,8 +19,11 @@ This guide is a combination of information gathered and modified from the BlueBu
 
 # Quick Start Docker-OSX
 
-This guide uses a fresh install of Ubuntu Desktop 22.04 LTS ([download](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64))
-
+This guide uses a fresh install of Ubuntu Desktop 22.04 LTS ([download](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64)), updated with 
+```
+sudo apt update
+sudo apt upgrade
+```
 ## Prerequisite Setup ([source](https://github.com/sickcodes/Docker-OSX#initial-setup))
 1. Turn on hardware virtualisation in your BIOS
 2. Install QEMU and other dependancies with:
